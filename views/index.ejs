@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="try.css">
+</head>
+
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            
+            <img src="logo.png" alt="" height="50px">
+            <span class="fs-4">Weather App</span>
+          </div>
+        </div>
+      </header>
+      
+      <div class="container main-content">
+          <div class="row justify-content-md-center">
+              <div class="col upper">
+                  <br><br>
+                <form action="/" method="POST">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter City Name" aria-label="Recipient's username" aria-describedby="button-addon2" name="city">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+                      </div>
+                </form>
+                <%if(ic==null){%>
+                  <div class="weatherIcon"><i class="wi wi-day-cloudy" ></i></div>
+                  <%}%>
+                  <%if(ic!=null){%>
+                    <div class="weatherIcon"><img src=" http://openweathermap.org/img/wn/<%=ic%>@2x.png" style="height: 140px;"></div>
+                  <%}%>
+              
+
+              </div>
+          </div>
+          <br><br>
+         
+          <div class="row down">
+              <div class="col weatherInfo">
+                <div class="temperature"><span><%=tempe%></span></div>
+                <div class="description">
+                    <div class="weatherCondition"><%=desc%></div>
+                    <div class="place"><%=city%></div>
+              </div>
+              </div>
+
+              <div class="col date">
+                
+                
+              </div>
+          </div>
+      </div>
+          </div>
+      </div>
+    
+    <!-- <h1>
+        <%=tempe%>
+    </h1> -->
+</body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+body {
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* flex-direction: column; */
+    min-height: 100vh;
+    /* max-width: 600px; */
+}
+
+.main-content {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width:600px;
+    transform: translate(-50%, -50%);
+    /* flex-wrap: wrap; */
+    cursor: pointer;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 2%;
+  }
+
+  .input-group {
+    width: auto;
+  }
+
+  .weatherIcon{
+     /* flex: 1 100%; */
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   
+    font-family: weathericons;
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+    justify-content: space-around;
+    font-size: 100px;
+   
+  }
+
+.weatherInfo{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.down{
+  display: flex;
+  flex-direction: row;
+  height: 150px
+}
+
+.weatherInfo{
+  flex: 3;
+  /* height: 40%; */
+  background: #080705;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.date{
+  flex:1;
+  height: 100%;
+  background: rgb(68, 112, 207);
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0;
+  padding: 2%
+}
+
+.weatherInfo{
+  display: flex;
+
+  
+}
+.temperature{
+  flex:2;
+  font-size: 35px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.description{
+  flex:3;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.weatherCondition{
+  font-size: x-large;
+}
+
+.place{
+  font-size: large;
+}
+
+/* @media only screen and (max-width: 300px){
+  .main-content{
+   max-width: 300px;
+  }
+} */
+
+.btn{
+  background: #080705;
+  color:#fff;
+  border: 1px solid transparent;
+}
