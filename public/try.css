@@ -23,6 +23,7 @@ body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-right: 2%;
+    /* margin-top: 6%; */
   }
 
   .input-group {
@@ -109,11 +110,11 @@ body {
   font-size: large;
 }
 
-/* @media only screen and (max-width: 300px){
-  .main-content{
-   max-width: 300px;
+@media only screen and (max-width: 600px) {
+  .main-content  {
+    margin-top: 6%;
   }
-} */
+}
 
 .btn{
   background: #080705;
